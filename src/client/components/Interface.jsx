@@ -40,7 +40,7 @@ export default function Interface(){
         else if(json.decision === "deny"){
           setFormType("claim-denied")
           setExplanation(json.explanation)
-          setBoxShadow({boxShadow: "0px 0px 5px rgb(255, 129, 129)"})
+          setBoxShadow({boxShadow: "0px 0px 5px rgb(255, 44, 44)"})
         }
         setCurrentResponse(json.explanation)
       })
@@ -75,7 +75,7 @@ export default function Interface(){
           else if(json.decision === "deny"){
             setFormType("claim-denied")
             setExplanation(json.explanation)
-            setBoxShadow({boxShadow: "0px 0px 5px rgb(255, 129, 129)"})
+            setBoxShadow({boxShadow: "0px 0px 5px rgb(255, 44, 44)"})
             setAppealUsed(true)
           }
         })
