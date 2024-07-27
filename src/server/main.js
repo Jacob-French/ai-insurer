@@ -121,7 +121,9 @@ app.post("/openAi/claim", async (req, res) => {
   res.send(JSON.stringify(responseData));
 })
 
-
+app.get("/test", (req, res) => {
+  res.send("test complete");
+});
 
 app.post("/openAi/appeal", async (req, res) => {
   const appeal=req.body;
