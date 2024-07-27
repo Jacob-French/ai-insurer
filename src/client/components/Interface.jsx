@@ -24,6 +24,8 @@ export default function Interface(){
       body: JSON.stringify(claim)
     }
 
+    console.log("back end: ", BACK_END_URL)
+
     try{
       fetch(`${BACK_END_URL}/claim`, fetchData)
       .then(response => response.json())
