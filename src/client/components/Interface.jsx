@@ -29,7 +29,7 @@ export default function Interface(){
     console.log("test2")
 
     try{
-      fetch(`${BACK_END_URL}/claim`, fetchData)
+      fetch(`${BACK_END_URL}/openAi/claim`, fetchData)
       .then(response => response.json())
       .then((json) => {
         if(json.decision === 'accept'){
@@ -64,7 +64,7 @@ export default function Interface(){
     }
 
     try{
-      fetch(`${BACK_END_URL}/appeal`, fetchData)
+      fetch(`${BACK_END_URL}/openAi/appeal`, fetchData)
         .then(response => response.json())
         .then((json) => {
           if(json.decision === "accept"){
