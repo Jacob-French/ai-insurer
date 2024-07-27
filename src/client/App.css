@@ -1,0 +1,8 @@
+.app{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  align-items: center;
+  background-color: rgb(12, 12, 12);
+}
