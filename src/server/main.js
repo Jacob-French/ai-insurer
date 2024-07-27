@@ -1,12 +1,17 @@
 import express from "express";
 import ViteExpress from "vite-express";
 import axios from "axios";
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const app = express();
 app.use(express.json());
 
 const apiEndpoint = "https://api.openai.com/v1/chat/completions"
-const apiKey = "sk-proj-dwW5d5Kwas258fWzwyFHT3BlbkFJA5eZzX0rkygVBf2vmHOq"
+const apiKey = process.env.API_KEY;
+
+console.log("api key: ", apiKey);
 
 const headers = {
   headers: {
